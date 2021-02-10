@@ -1,0 +1,35 @@
+BASIC
+Sleep
+Shutdown
+Your name (stands for)
+Screenshot
+Are you there
+What time is it
+Change voice
+Wikipedia [term]
+Diagnostics
+get my ip v4
+get my ip v6
+get both my ip
+Play my music
+open google
+
+basic calculation [number-1] A LOT MORE TO IT
+basic calculation [pi]
+basic calculation [tan] [number-value]
+basic calculation [sin] [number-value]
+basic calculation [cos] [number-value]
+basic calculation [factorial] (of) [number-value]
+basic calculation [number-value] (factorial)
+basic calculation [value of e]
+basic calculation [add] [number-value] (and) [number-value]
+basic calculation [subtract] [number-value] (word) [number-value]
+basic calculation [multiply] [number-value] (by) [number-value]
+basic calculation [divide] [number-value] (by) [number-value]
+basic calculation [number-value] [plus] [number-value]
+basic calculation [number-value] [minus] [number-value]
+basic calculation [number-value] [times] [number-value]
+basic calculation [number-value] [divided by] [number-value]
+basic calculation [number-value] [to the power of] [number-value]
+basic calculation [log] [number-value] 
+basic calculation [log] [number-value] [base] [number-value]

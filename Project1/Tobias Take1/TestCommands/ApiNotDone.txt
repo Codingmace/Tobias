@@ -1,0 +1,9 @@
+transcribe audio to text [url] [url-address]
+transcribe audio to text [get task] [task-id]
+transcribe audio to text [status]
+transcribe audio to text [tasks]
+transcribe audio to text [file] [file-name]
+analyze video [video-data]
+analyze image [image-data]
+youtube search
+scan url threat [url-address]

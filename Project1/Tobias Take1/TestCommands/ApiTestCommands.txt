@@ -1,0 +1,49 @@
+API   () = Optional [] = mandatory [-] = custom input
+define [word-term]
+google [search] [word-term] (number of responses returned)
+google [image] [word-term]
+google [crawl] [word-term] (number of responses returned)
+google [news] [word-term]
+reverse image search [url-address]
+proxy
+cat fact 
+cat fact [random] (length)
+weather [covid]
+weather [daily forecast]
+weather [hourly forecast]
+weather [historical records]
+weather # If it is none of the above go to openWeather, Then return nothing
+weather [current weather]
+weather [forecast today]
+weather [search]
+weather [historical data]
+weather [climate forecast]
+weather [5 day forecast]
+verify [phone-number]
+valid [email-address]
+analyze text [url] [summarize] [url-address]
+analyze text [url] [extract] [content] [url-address]
+analyze text [url] [extract] [named] [url-address]
+analyze text [url] [extract] [part of speech] [url-address]
+analyze text [url] [grab] [fetch] [url-address]
+analyze text [url] [grab] [named] [url-address]
+analyze text [url] [grab] [part of speech] [url-address]
+analyze video [video-data]
+analyze image [image-data]
+transcribe audio to text [url] [url-address]
+transcribe audio to text [get task] [task-id]
+transcribe audio to text [status]
+transcribe audio to text [tasks]
+transcribe audio to text [file] [file-name]
+scan url threat [ip-address]
+scan url threat [url-address] # Needs translation to ip address
+scan url link [url-address]
+image to text [url-address] [file-name]	
+youtube download [video-id]
+plate scan [url] [url-address]
+plate scan [file] [image-name]
+ip address to locate
+ip address geolocate
+ip address world wide
+
+youtube search # Not implemented yet

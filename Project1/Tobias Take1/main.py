@@ -54,6 +54,7 @@ def dirExist(folderPath):
     return True
 
 
+
 if __name__ == '__main__':
     if(speechEnabled):
         enableSpeechRecognition()
@@ -85,10 +86,11 @@ if __name__ == '__main__':
     cont = True
     from basicHelper import *
     from API.apiHandler import *
-    from API.IPAddress import getMyIPv4Address, getMyIPv6Address
+    from PAPI.ApiHelper import *
 #    for q in queries:
     while cont:
-        query = "are you there"
+#        query = "are you there"
+        query = "launch Github Desktop"
 #        query = q
         cont = not cont
 
@@ -167,6 +169,7 @@ if __name__ == '__main__':
             speak("opening google")
             webbrowser.get(browser).open_new_tab("https://google.com")
 
+        
 #        """ API HELPER SECTION """
         elif 'define' in query: # Done
             word = query.replace('define', '')
@@ -282,13 +285,35 @@ if __name__ == '__main__':
 
 #       """ Personal API Helper """
         
+        elif 'launch' in query:
+            query = query.replace("launch", "").strip()
+            print("Go to the other helper and launch the software")
+            softwareExist = openSoftware(query)
+            if softwareExist:
+                speak("Launching "+ query)
+            else:
+                speak("I cannot find that software. Hardcode it into the text file for me to know next time")
+
+        elif 'access traffic cameras in' in query:
+            query = query.replace("access traffic cameras in", "").strip()
+            speak(trafficCamera(query))
+
+        elif "clean text file lines" in query:
+            query = query.replace("clean text file lines", "")
+            speak(unique(query))
+
+        elif "lookup phone number" in query:
+            query = query.replace("lookup phone number","")
+            speak(phoneLookup(query))
+
+        elif "clean gmail account" in query:
+            speak("Make sure you have the credentials already set up")
+            speak(gmailCleanup())
 
 
-        
-
-        elif 'more commands' in query:
-            print("Print out the file with more commands")
-            print("Made some more commands here")
+#        elif 'more commands' in query:
+#            print("Print out the file with more commands")
+#            print("Made some more commands here")
 
 
         else: # check if it is a command to run on terminal

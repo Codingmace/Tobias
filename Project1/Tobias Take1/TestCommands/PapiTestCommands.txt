@@ -1,0 +1,6 @@
+PAPI   () = Optional [] = mandatory [-] = custom input
+launch [software-name]
+access traffic cameras in [state-name]
+clean text file lines (sort) [file-name]
+clean text file lines [file-name]
+lookup phone number [phone-number]

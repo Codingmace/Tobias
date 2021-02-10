@@ -1,0 +1,38 @@
+WordPad
+Chrome
+Visual Studio Installer
+Word
+Powerpoint
+Outlook
+Excel CNV?
+Publisher
+Access
+Excel
+OneDrive
+Arduino
+Putty
+Acrobat DC
+Windows Media Player
+Photoshop
+Dreamweaver
+Firefox
+Wireshark
+NPCap
+Box
+VirtualBox
+RStudio
+CCleaner
+CCleaner64
+CCleanerUpdate
+OBS
+VLC
+GNS3
+Genymotion
+Defraggler
+Defraggler64
+UltraDefrag
+Notepad
+Regedit
+File Explorer
+Teams
+Github Desktop

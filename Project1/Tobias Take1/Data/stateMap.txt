@@ -1,0 +1,63 @@
+Alabama - https://algotraffic.com/Cameras
+Alaska - https://511.alaska.gov/cctv?
+Arizona - https://www.az511.com/cctv
+Arkansas - https://idrivearkansas.com/
+California - https://cwwp2.dot.ca.gov/vm/streamlist.htm
+Cal San Deigo - https://traffic.511sd.com/
+Cal IE - https://ie511.org/traffic
+Cal GO - https://go511.com/Cameras/Index
+Colorado - https://www.coloradowebcam.net/camera, https://www.cotrip.org/map.htm
+Connecticut - https://cttravelsmart.org/cctv
+Delaware - http://deldot.gov/map/index.shtml?tab=TrafficCameras
+Florida - https://fl511.com/cctv?
+Georgia - http://511ga.org/
+Hawaii - http://hidot.hawaii.gov/?s=traffic+cameras, http://www2.honolulu.gov/honolulumyway/?trafficcam
+Idaho - https://lb.511.idaho.gov/idlb/cameras/camera.jsf?id=174
+Illinois - https://travelmidwest.com/lmiga/cameraReport.jsp?location=GATEWAY.IL
+Indiana - http://indot.carsprogram.org/
+Iowa - https://new.511ia.org/
+Kansas - https://www.kandrive.org/camera/1286
+Kentucky - https://trafficvid.lexingtonky.gov/publicmap/ (256 and only accessing these)
+Louisiana - https://www.511la.org/cctv?
+Maine - https://www.maine.gov/mdot/cams/all/
+Maryland - https://chart.maryland.gov/trafficcameras/index.php
+Massachusetts - https://www.mass511.com/cctv
+Michigan - https://mdotjboss.state.mi.us/MiDrive/cameras
+Minnesota - https://511mn.org/
+Mississippi - https://www.mdottraffic.com/default.aspx?showMain=true
+Missouri - http://mobile.gatewayguide.com/cameras.aspx, https://www.ozarkstraffic.com/cameras/
+Montana - http://rwis.mdt.mt.gov/scanweb
+Nebraska - https://hb.511.nebraska.gov/#cameras
+Nevada - https://nvroads.com/icx/pages/cameras.aspx
+New Hampshire - https://www.nhtrafficcams.com/
+New Jersey - https://511nj.org/camera
+New Mexico - https://nmroads.com/mapIndex.html?#
+New York - https://511ny.org/
+North Carolina - https://drivenc.gov/
+North Dakota - https://travel.dot.nd.gov/cameras/
+Ohio - https://www.ohgo.com/all-ohio
+Oklahoma - https://www.oktraffic.org/index.php
+Oregon - https://www.tripcheck.com/Pages
+Pennsylvania - https://www.511pa.com/CameraListing.aspx
+Rhode Island - http://www.dot.ri.gov/travel/cameras_metro.php
+South Carolina - https://www.511sc.org/
+South Dakota - https://sd511.org/
+Tennessee - https://smartway.tn.gov/traffic?f
+Texas - https://its.txdot.gov/ITS_WEB
+Texas2 - https://www.txdot.gov/inside-txdot/division/traffic/cameras.html
+Utah - https://www.udottraffic.utah.gov/
+Vermont - http://newengland511.org/
+Virginia - https://www.511virginia.org/
+Washington - https://www.wsdot.com/Traffic/routelist.aspx#I-5
+West Virginia - http://wv511.org/
+Wisconsin - https://511wi.gov/cctv?
+Wyoming - https://wyoroad.info/pls/Browse/WRR.Cameras
+Puerto Rico - http://its.dtop.gov.pr/en/TrafficCameras.aspx?AspxAutoDetectCookieSupport=1
+Canada - https://511on.ca/cctv?
+Camera All Over the place - https://www.webcamtaxi.com/en/webcams.html
+Traffic Views - https://trafficview.org/live_traffic
+ArlingtonVA - https://transportation.arlingtonva.us/live-traffic-cameras/
+Federal Info - https://www.fhwa.dot.gov/trafficinfo/
+Amakia - http://www.goakamai.org/
+Beaches - https://www.livebeaches.com/
+WeatherBug - https://www.weatherbug.com/traffic-cam/
