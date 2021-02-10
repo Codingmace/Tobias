@@ -351,3 +351,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Visual Studio
+Project1/Tobias Take1/Tobias Take1/Minimal/*
+*.sln
+Project1/Tobias Take1/Tobias Take1/Tobias Take1.pyproj
