@@ -18,18 +18,13 @@ Phase 4 and final phase. If I make it here I hope to give credit to other people
 | Photos  | *Enhance* | *Compress* | Find Face | 
 | Scrapping | Desktop Photo | Random Cat Facts | Top Memes |
 
-- Facial Recognition
-  - [ ] Human Face
-
+### PHASE 2
 - Phone Calls
   - [ ] Search to see if blocked (DNC DATABASE API) - Working on
   
 - Queries
   - [ ] Can be taught new commands
   - [ ] Play music - Needs to be tested
-  - [ ] Launch softwares on machine
-  - [ ] Activate PiHole (What I use as a DNS AdBlocker)
-  - [ ] Current System Stats
   
 - Photo
   - [ ] Grab recent top iFunny memes
@@ -52,7 +47,6 @@ Phase 4 and final phase. If I make it here I hope to give credit to other people
   - [ ] Summarize Text
   - [ ] License plate recognition
 
-### PHASE 2
  - Aspects
   - [ ] Get Animal Breed
   - [ ] Output passive crawl of a website
