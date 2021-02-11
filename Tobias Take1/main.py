@@ -63,19 +63,23 @@ if __name__ == '__main__':
     machineName = "TOBIAS"
     machineMean = "Totally Obscure Intelligent Assistant System"
     platform = sys.platform
-    name = "Master"
+    name = input("Input your username : ")
     noUsers = dirExist("User")
     userPath = "User/" + name + "/"
     userExists = dirExist(userPath)
     if not userExists:
-        print("Have to create a user now")
+        directoriesToMake = ['Videos' , 'SmallerFace', 'screenshot','OLD','Music','Images','Faces','Other']
+        for direct in directoriesToMake:
+            if dirExist(userPath + direct):
+                print("Making " + direct)
+        print("Done creating a user")
     militaryTime = True
     voiceId = 1 # Female
     musicPath = userPath + "music/" # Later verify how much we start with
     browser= 'chrome' # Have this in all of them so can remove it
     chrome_path = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
     webbrowser.register(browser, None, webbrowser.BackgroundBrowser(chrome_path))
-    
+
     ipv4 = getMyIPv4Address()
     ipv6 = ""
     try:
@@ -87,12 +91,11 @@ if __name__ == '__main__':
     from basicHelper import *
     from API.apiHandler import *
     from PAPI.ApiHelper import *
-#    for q in queries:
     while cont:
-#        query = "are you there"
-        query = "launch Github Desktop"
+        query = input("Input a command : ")
+#        query = "launch Github Desktop"
 #        query = q
-        cont = not cont
+        cont = not query.lower() == 'exit'
 
 #        """ BASIC HELPER SECTION """
         if 'sleep' in query:
@@ -169,7 +172,7 @@ if __name__ == '__main__':
             speak("opening google")
             webbrowser.get(browser).open_new_tab("https://google.com")
 
-        
+
 #        """ API HELPER SECTION """
         elif 'define' in query: # Done
             word = query.replace('define', '')
@@ -207,11 +210,11 @@ if __name__ == '__main__':
         elif 'verify' in query:
             query = query.replace("verify", "").strip()
             speak(verifyPhoneNumber(query))
-            
-        elif "valid" in query: 
+
+        elif "valid" in query:
             query = query.replace("valid","").strip()
             speak(validateEmailAddress(query))
-            
+
         elif 'analyze' in query:
             query = query.replace("analyze","")
             if 'text' in query:
@@ -230,10 +233,10 @@ if __name__ == '__main__':
                         speak("I have gotten the text at the URL")
                 else:
                     speak("I do not think that is an option")
-                    
+
             elif 'video' in query or 'image' in query:
                 speak("This one doesn't work at all yet")
-#                print(estimatePose(query)) 
+#                print(estimatePose(query))
 
 
         elif 'transcribe' in query:
@@ -252,7 +255,7 @@ if __name__ == '__main__':
                 query = query.replace("scan url link", "")
                 print(IntelligentUrl(query))
                 speak("Scanning the URL complete.") # Print result. If to file or console
-                
+
         elif 'image to text' in query:
             query = query.replace("image to text", "")
             imageText = urlImage2Text(query)
@@ -262,13 +265,13 @@ if __name__ == '__main__':
             if 'search' in query:
                 speak("I don't think I have this one yet")
                 speak("Alternatively I could open youtube.com and you look it up yourself")
-                
+
             elif 'download' in query:
                 query = query.replace("youtube download","")
                 speak("Downloading Youtube File")
                 status = downloadYoutube(query)
                 speak("The download " + status)
-            
+
         elif 'ip address' in query:
             if "to location" in query:
                 speak(ip2Location(ipv4))
@@ -284,7 +287,7 @@ if __name__ == '__main__':
 
 
 #       """ Personal API Helper """
-        
+
         elif 'launch' in query:
             query = query.replace("launch", "").strip()
             print("Go to the other helper and launch the software")
@@ -309,11 +312,6 @@ if __name__ == '__main__':
         elif "clean gmail account" in query:
             speak("Make sure you have the credentials already set up")
             speak(gmailCleanup())
-
-
-#        elif 'more commands' in query:
-#            print("Print out the file with more commands")
-#            print("Made some more commands here")
 
 
         else: # check if it is a command to run on terminal

@@ -10,7 +10,7 @@ def launch(program):
     lines = f.readlines()
     size = len(lines)
     for i in range(0, size): # CLEANING THE FUCKING \n off
-        lines[i] = lines[i].strip().replace("%USER%",username)
+        lines[i] = lines[i].strip().lower()
     f.close()
 
     f1 = open("Data/Paths.txt", "r")
@@ -25,8 +25,15 @@ def launch(program):
     ## ADD LOWERCASE TO MATCH
     ## Add that adding new ones
     ## Fill out the microsoft Store apps
-    ind = lines.index(program)
+    ind = -1
+    program = program.lower()
+    if program in lines:        
+        ind = lines.index(program)
     if ind < 0:
         return False
-    subprocess.Popen(lines1[ind])
+    try:
+        subprocess.Popen(lines1[ind])
+    except:
+        print("That may require elevated permissions. I cannot open it")
+        return False
     return True
