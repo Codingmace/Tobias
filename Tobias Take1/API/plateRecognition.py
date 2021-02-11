@@ -18,7 +18,7 @@ def recognizeByUrl(imageUrl):
 def recognizeByImage(fileData):
 # Binary Imagex
     url = "https://number-plate-recognition.p.rapidapi.com/recognition"
-    
+
     payload = "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"image\"\r\n\r\n\r\n-----011000010111000001101001--\r\n\r\n"
     headers = {
         'content-type': "multipart/form-data; boundary=---011000010111000001101001",

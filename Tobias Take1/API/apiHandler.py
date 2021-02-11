@@ -106,7 +106,7 @@ def randomCatFact(query):
         except:
             length = -1
     return catFact(length).json()['data'][0]['fact']
-    
+
 
 # Open Weather : Reports back the weather
 """ NEEDS: have to sort out how I am going to do location """
@@ -185,7 +185,7 @@ def weather(query):
             for c in result['deaths']:
                 dea += int(c)
             return tot + " " + str(population) + " " + str(conf) + " " + str(dea)
-        
+
     lang = weatherInfo['lang']
     geocode = "100, 20" # Get this from somewhere else
     units = weatherInfo['units']
@@ -249,7 +249,7 @@ def estimatePose(query):
         return video(videoData)
     else:
         return ""
-    
+
 # Transcribe : Turns audio into text
 def transcribeAudio(query):
     from API.transcribe import transcribeUrl, getTask, serviceStatus, getTasks, transcribe
@@ -276,8 +276,8 @@ def encode(term): # URL Encoding
 # Trulia :
 def propertySearch(query):
     from API.trulia import searching, propertyDetail
-    print("Have no fucking clue how I am going to get this information")    
-    
+    print("Have no fucking clue how I am going to get this information")
+
 
 # COST MONEY
 # Category Prediction : Prints out catagories the text matches
@@ -364,7 +364,7 @@ def detectUrlThreats(query):
     print("if url must translate to an ip address")
     print("If Ip address don't need to do anything which is the basis")
     return detectThreat(query)
-    
+
 # URL Intel : Extracts Links from a URL
 def IntelligentUrl(query):
     from API.urlIntel import urlIntel

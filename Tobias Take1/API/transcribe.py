@@ -3,7 +3,7 @@ from API.variables import rapidApiKey
 
 def transcribeUrl(audioUrl):
     url = "https://transcribe.p.rapidapi.com/api/v1/transcribe_url/"
-    
+
     payload = "{\r\n    \"url\": " + audioUrl + "\r\n}"
     headers = {
         'content-type': "application/json",
@@ -47,7 +47,7 @@ def getTasks():
 
     response = requests.request("GET", url, headers=headers)
     return response
- 
+
 ## Import Binary? audio local file?
 def transcribe(fileData):
     url = "https://transcribe.p.rapidapi.com/api/v1/transcribe/"
@@ -61,5 +61,3 @@ def transcribe(fileData):
 
     response = requests.request("POST", url, data=payload, headers=headers)
     return response
-
-        

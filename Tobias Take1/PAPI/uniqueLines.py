@@ -12,7 +12,7 @@ def lineSort(filename):
 		f1.write(a)
 	f1.flush()
 	f1.close()
-	
+
 def line(filename):
 	f = open(filename, "r")
 	lines = f.readlines()

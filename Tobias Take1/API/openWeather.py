@@ -81,5 +81,3 @@ def forecast5d3h(location, latitude, longitude, lang, count, zipcode):
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     return response
-
-

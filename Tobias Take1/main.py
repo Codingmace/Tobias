@@ -92,10 +92,10 @@ if __name__ == '__main__':
     from API.apiHandler import *
     from PAPI.ApiHelper import *
     while cont:
-        query = input("Input a command : ")
+        query = input("Input a command (exit to quit): ")
 #        query = "launch Github Desktop"
 #        query = q
-        cont = not query.lower() == 'exit'
+        cont = not query.lower() == 'exit' 
 
 #        """ BASIC HELPER SECTION """
         if 'sleep' in query:
@@ -313,6 +313,23 @@ if __name__ == '__main__':
             speak("Make sure you have the credentials already set up")
             speak(gmailCleanup())
 
+        elif "pihole" in query:
+            query = query.replace("pihole ", "")
+            print("Not done but have implemented the steps")
+            print("Look in my other PiHole repository if you would like to improve your already made pihole system")
+            print("Check that it even exists")
+            if "status" in query:
+                print("Print out the status")
+            elif "disable" in query:
+                print("Check if it is already disabled. If not disable")
+            elif "enable" in query:
+                print("Check if it is already enabled. If not enable")
+            elif "update" in query:
+                print("Updating the database. This is very hard and takes a while")
+            elif "install" in query:
+                print("install it based on github and install it. Also grab my  domains list")
+            elif "remove" in query:
+                print("just covering all my bases")
 
         else: # check if it is a command to run on terminal
             print("Check here if it is a command or not")

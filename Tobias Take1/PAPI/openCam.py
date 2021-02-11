@@ -24,4 +24,3 @@ def findWebCamera(state):
     else:
         webbrowser.open(cameraLink)
         return "I have opened up " + state + " cameras"
-

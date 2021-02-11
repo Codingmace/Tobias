@@ -47,7 +47,7 @@ def changeVoice(curVoice):
         return 0
     elif voiceId == 0:
         return 1
-    
+
 
 def searchWiki(query):
     import wikipedia
@@ -60,7 +60,7 @@ def diagnostics():
     import psutil
     usage = str(psutil.cpu_percent())
     battery = psutil.sensors_battery()
-    
+
     return str("CPU is at " + usage + " and batter is at " + str(battery.percent))
 
 def playMyMusic(path):
@@ -128,8 +128,5 @@ def advanceCalculations(query):
         query = query.replace(w, symbol[i])
         i += 1
     print(query)
-    
+
     return "Done"
-
-
-

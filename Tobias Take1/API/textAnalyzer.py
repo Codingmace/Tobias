@@ -41,5 +41,3 @@ def partOfSpeech(url):
 
     response = requests.request("GET", baseUrl, headers=headers, params=querystring)
     return response
-
-    

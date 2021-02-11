@@ -12,6 +12,3 @@ def detectThreat(ipAddress):
 
     response = requests.request("GET", url, headers=headers)
     return response
-
-
-

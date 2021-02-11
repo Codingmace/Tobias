@@ -29,15 +29,15 @@ def portScanner():
    print ('Starting scan on host: ', t_IP)
    q = Queue()
    startTime = time.time()
-      
+
    for x in range(100):
       t = threading.Thread(target = threader)
       t.daemon = True
       t.start()
-      
+
    for worker in range(1, 500):
       q.put(worker)
-      
+
    q.join()
    print('Time taken:', time.time() - startTime)
 

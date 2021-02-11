@@ -23,7 +23,7 @@ class Message:
                 return true
 
         return false
-    
+
 
 class Site:
     def __init__(self):
@@ -41,7 +41,7 @@ class Site:
 
     def addMessage(self, mail):
         self.messages.append(mail)
-    
+
     def getString(self):
         fin = ""
         fin += self.sender + " " + self.domainName + " " + str(len(self.messages))
@@ -56,23 +56,23 @@ class Site:
         return self.messages[0].link
 
 
-# com , org , us , edu , gov , net , 
+# com , org , us , edu , gov , net ,
 
 def get_records(domain):
     """
     Get all the records associated to domain parameter.
-    :param domain: 
-    :return: 
+    :param domain:
+    :return:
     """
     ids = [ 'A','NS','MD','MF','CNAME','SOA','MB','MG', 'MR','MX','AAAA']
-    
+
     for a in ids:
         try:
             answers = dns.resolver.query(domain, a)
             for rdata in answers:
                 print(a, ':', rdata.to_text())
                 return a
-            
+
         except Exception as e:
             print(e)  # or pass
     return "NA"
@@ -92,7 +92,7 @@ def checkDNS(url):
         b.write(url)
     b.close()
     c.close()
-    
+
 
 def validURL(url):
     try:
@@ -126,7 +126,7 @@ def cleanDomain(url):
         newUrl = newUrl.replace("http://","")
         startingIndex = newUrl.index("/")
         return "http://" + (newUrl[0:startingIndex]).strip()
-   
+
 
 
 def cleanGmail():
@@ -287,7 +287,7 @@ def cleanGmail():
         except:
             issuesFile.write(s.getString())
             print("that message does not exist")
-        
+
     deletingRecords = open("deleting.txt", "w")
     keeping = input("enter in the number seperated by a , of the ones you want to keep: ")
     issuesFile.write("\nhere is the split\n\n")

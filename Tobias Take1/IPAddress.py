@@ -17,11 +17,10 @@ def getMyIPv4Address():
         address = re.search(r'\+3>(.*?)</',r.content.decode('utf-8')).group(1)
         print('IPv4: ' + address)
         return address
-    
+
 def getMyIPv6Address():
    with patch('socket.getaddrinfo', side_effect=getaddrinfoIPv6):
        r = requests.get('http://ip6.me')
        address = re.search(r'\+3>(.*?)</',r.content.decode('utf-8')).group(1)
        print('IPv6: ' + address)
        return address
-

@@ -21,7 +21,7 @@ def images(term):
 
     response = requests.request("GET", url, headers=headers)
     return response
-    
+
 
 def crawl(term, number):
     url = "https://google-search3.p.rapidapi.com/api/v1/crawl/q=" + term + "&num=" + str(number)
@@ -43,7 +43,7 @@ def news(term):
 
     response = requests.request("GET", url, headers=headers)
     return response
-    
+
 
 
 def SERP(payload):
@@ -60,5 +60,3 @@ def SERP(payload):
 
     response = requests.request("POST", url, data=payload, headers=headers)
     print(response.text)
-
-

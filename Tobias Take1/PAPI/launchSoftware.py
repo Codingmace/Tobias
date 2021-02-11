@@ -27,7 +27,7 @@ def launch(program):
     ## Fill out the microsoft Store apps
     ind = -1
     program = program.lower()
-    if program in lines:        
+    if program in lines:
         ind = lines.index(program)
     if ind < 0:
         return False

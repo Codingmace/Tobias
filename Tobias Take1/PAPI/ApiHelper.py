@@ -78,4 +78,3 @@ def phoneLookup(query):
         return "There was an issue with site 1, but USPhonebooks said the phone number was " + site2
     else:
         return "I got different results. Site 1 was " + site1 + " and site 2 was " + site2
- 

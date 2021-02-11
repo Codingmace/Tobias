@@ -40,4 +40,3 @@ def namedEntity(url):
 
     response = requests.request("GET", baseUrl, headers=headers, params=querystring)
     return response
-

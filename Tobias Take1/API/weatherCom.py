@@ -10,11 +10,11 @@ def covid19(language):
         'x-rapidapi-key': rapidApiKey,
         'x-rapidapi-host': "weather-com.p.rapidapi.com"
         }
-    
+
     response = requests.request("GET", url, headers=headers, params=querystring)
     return response
 
-def forecastDaily(geocode, units, lang): 
+def forecastDaily(geocode, units, lang):
     url = "https://weather-com.p.rapidapi.com/v3/wx/forecast/daily/3day"
 
     querystring = {"geocode":geocode,"units":units,"language":lang}
@@ -52,5 +52,3 @@ def historical30d(geocode, units, lang):
 
     response = requests.request("GET", url, headers=headers, params=querystring)
     return response
-
-

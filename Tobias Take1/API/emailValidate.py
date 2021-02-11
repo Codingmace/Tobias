@@ -4,7 +4,7 @@ from API.variables import rapidApiKey
 def validEmail(email):
     url = "https://email-validator8.p.rapidapi.com/api/v2.0/email"
     payload = "email=" + email.replace("@","%40")
-    
+
     headers = {
         'content-type': "application/x-www-form-urlencoded",
         'x-rapidapi-key': rapidApiKey,

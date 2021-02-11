@@ -28,7 +28,7 @@ def keys():
                 print("That doesn't seem to be the right. Length of " + len(rapidApi))
                 temp = input("Is " +rapidApi + " correct (yes/no)?")
                 rapidValid = "yes" in temp.lower()
-        
+
     else:
         print("That sucks. Disabling all API Keys")
 
@@ -99,11 +99,11 @@ def createRequirements():
                 print("There was an issue. Flushing the file and closing it.")
                 req.flush()
                 req.close()
-                return 
+                return
     req.flush()
     req.close()
     print("Ok we have written the requirements file. Now just run 'pip install -r requirements.txt'")
-    
+
 def main():
     intro()
     keys()
