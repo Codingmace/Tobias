@@ -11,12 +11,14 @@ Phase 4 and final phase. If I make it here I hope to give credit to other people
 | Facial Recognition | Cat Faces  | Human Faces |
 | Phone Calls  | Reverse IP lookup  | Name of caller | Origin of caller |  See if caller is blocked | Validate Phone Number |
 | Networking   | Get Public IP | Ping Sweep | Port Scanner | Find Open Proxies |
-| Web          | Search Google | Open Web URL | Crawl website | Download Videos | Gmail Unsubscribe |
+| Web          | Search Google | Open Web URL | Crawl website | Download Youtube Videos | Gmail Unsubscribe |
+| Web Cont.    | Scan URL for Threats | Summarize URL content | 
 | Removed      | ~~Remove from internet~~ | ~~Android vulernability parts~~ |
 | Basic Queries | Taught New Commands | Weather | Time and Screenshot | Shutdown and Sleep | Play Music |
-| Quieres Cont. | Launch Software | Activate DNS Adblocker | Current System Stats | Define a word | Basic Calculations |
-| Photos  | *Enhance* | *Compress* | Find Face | 
+| Quieries Cont. | Launch Software | Activate DNS Adblocker | Current System Stats | Define a word | Basic Calculations |
+| Photos  | *Enhance* | *Compress* | Find Face | Image to Text |
 | Scrapping | Desktop Photo | Random Cat Facts | Top Memes |
+| Public Info | Access Traffic Cameras | 
 
 ### PHASE 2
 - Phone Calls
@@ -24,7 +26,6 @@ Phase 4 and final phase. If I make it here I hope to give credit to other people
   
 - Queries
   - [ ] Can be taught new commands
-  - [ ] Play music - Needs to be tested
   
 - Photo
   - [ ] Grab recent top iFunny memes
@@ -37,16 +38,7 @@ Phase 4 and final phase. If I make it here I hope to give credit to other people
   - [ ] Scan Videos for key components
   - [ ] Remove duplicate files on computer
   - [ ] Remove empty folders on computer
-  
-- Extra
-  - [ ] Reverse Image Search
-  - [ ] Image to text
-  - [ ] Scan url for threats
-  - [ ] Validate email
-  - [ ] Analyze Text
-  - [ ] Summarize Text
-  - [ ] License plate recognition
-
+ 
  - Aspects
   - [ ] Get Animal Breed
   - [ ] Output passive crawl of a website
