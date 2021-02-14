@@ -6,8 +6,11 @@ import smtplib
 import platform
 import getpass
 
+engine = None
+# speechEnabled = True # Speech recognition/ Sating information enabed?
 speechEnabled = False # Speech recognition/ Sating information enabed?
-faceEnabled = False # Facial Recognition Feature Enabled?
+faceEnabled = True # Facial Recognition Feature Enabled?
+
 def enableSpeechRecognition():
     import pyttsx3
     import speech_recognition as sr  #Implement later Automatic-speech recognition
@@ -15,7 +18,7 @@ def enableSpeechRecognition():
     engine = pyttsx3.init()
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[1].id)
-
+    return engine
 
 def speak(text):
     if (speechEnabled):
@@ -23,12 +26,6 @@ def speak(text):
         engine.runAndWait()
     else:
         print(text)
-
-
-# HERE DO ALL THE FACIAL RECOGNITION STUFF
-
-# Do all diagnostics here
-
 
 def takeCommand(query):
     return query
@@ -38,7 +35,6 @@ def greetings(machineName, userName):
     response = "Good Evening "+ name
     if hour >= 0 and hour < 12:
         response = "Good Morning "+ name
-
     elif hour >= 12 and hour < 18:
         response = "Good Afternoon"+name
 
@@ -56,23 +52,42 @@ def dirExist(folderPath):
 
 
 if __name__ == '__main__':
+    from basicHelper import *
+    from API.apiHandler import *
+    from PAPI.ApiHelper import *
+    from PAPI.facialRecognition import facialRecognition
+    from API.variables import *
     if(speechEnabled):
-        enableSpeechRecognition()
+        engine = enableSpeechRecognition()
     from API.IPAddress import getMyIPv4Address, getMyIPv6Address
     print("Loading Config")
     machineName = "TOBIAS"
     machineMean = "Totally Obscure Intelligent Assistant System"
     platform = sys.platform
-    name = input("Input your username : ")
+    name = "Guest"
+    if (faceEnabled):
+        print("start out the face recognition")
+        name = facialRecognition()
+        if(name == "Unknown"): 
+            print("that is an unknown person. Creating User")
+            name = input("Enter your Username :  ")
+            os.makedirs("./User/" + name + "/Face/")
+            os.rename("./User/image.jpg", "./User/" + name + "/Face/image.jpg")
+        else:
+            print("Welcomes " + name)
+    else:
+        name = input("Input your username : ")
+    # Run facial recognition to find user's name:
     noUsers = dirExist("User")
     userPath = "User/" + name + "/"
     userExists = dirExist(userPath)
     if not userExists:
-        directoriesToMake = ['Videos' , 'SmallerFace', 'screenshot','OLD','Music','Images','Faces','Other']
+        directoriesToMake = ['Videos' , 'SmallerFace', 'screenshot','OLD','Music','Images','Face','Other']
         for direct in directoriesToMake:
             if dirExist(userPath + direct):
                 print("Making " + direct)
-        print("Done creating a user")
+        speak("Done Loading user "+ name)
+
     militaryTime = True
     voiceId = 1 # Female
     musicPath = userPath + "music/" # Later verify how much we start with
@@ -88,13 +103,9 @@ if __name__ == '__main__':
         print("You do not have an IPv6 Address")
 
     cont = True
-    from basicHelper import *
-    from API.apiHandler import *
-    from PAPI.ApiHelper import *
+
     while cont:
         query = input("Input a command (exit to quit): ")
-#        query = "launch Github Desktop"
-#        query = q
         cont = not query.lower() == 'exit' 
 
 #        """ BASIC HELPER SECTION """
@@ -175,7 +186,7 @@ if __name__ == '__main__':
 
 #        """ API HELPER SECTION """
         elif 'define' in query: # Done
-            word = query.replace('define', '')
+            word = query.replace('define ', '')
             speak("The word " + word + "means " + wordDefinition(word))
             speak("Hope that definition works for you") # Could add returning an example
 

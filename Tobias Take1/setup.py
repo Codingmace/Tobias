@@ -51,11 +51,21 @@ def keys():
     print("Writting information to file variables.py")
     print("You can change the information later on if you would like")
     f = open("API/variables.py", "w")
-
+    
     variableInfo = "rapidApiKey = \"" + rapidApi + "\"\ndncApiKey = \"" + dncApi + "\"\n"
     variableInfo2 = 'weatherInfo = {"language" : "english", "lang" : "en", "units": "e", "callback": "test", "mode":"JSON", "types": "link, accurate", "measurement":"imperial", "count": "10"} # Can change measurement to metric")'
     f.write(variableInfo)
     f.write(variableInfo2)
+    enableSpeech = input("Would you like to enable speech? ")
+    if "yes" in enableSpeech:
+        f.write("speechEnabled=True")
+    else:
+        f.write("speechEnabled=False")
+    faceRecog = input("Would you like to enable Facial Recognition? ")
+    if "yes" in faceRecog:
+        f.write("faceEnabled=True")
+    else:
+        f.write("faceEnabled=False")
     f.flush()
     f.close()
 
