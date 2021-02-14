@@ -208,8 +208,8 @@ def weather(query):
 def validateEmailAddress(query):
     from API.emailValidate import validEmail
     result = validEmail(query).json()
-    dispose = result['disposable'] == 'True'
-    valid = result['valid'] == 'True'
+    dispose = result['disposable'] == 'true'
+    valid = result['valid'] == 'true'
     fin = ""
     if not valid:
         fin += "non"
