@@ -17,7 +17,7 @@ def keys():
 
     rapidValid = False
     rapidApiSelect = input("Do you have a rapidAPIKey (yes/no)? ")
-    rapidApi = "86eaa0e73bmshcfa9460cffe50ebp1cc555jsnc61c037ed390"
+    rapidApi = "3f9620697cmsh4d8a1a910032d97p15547bjsn7f4d1d89819c"
     if "yes" in rapidApiSelect.lower():
         while not rapidValid:
             rapidApi = input("Please input your rapidApiKey now: ").strip()
