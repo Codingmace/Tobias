@@ -40,9 +40,10 @@ Phase 4 and final phase. If I make it here I hope to give credit to other people
   - [ ] Remove empty folders on computer
  
  - Aspects
-  - [ ] Get Animal Breed
-  - [ ] Output passive crawl of a website
+  - Get Animal Breed
+  - Output passive crawl of a website
   - Deep Learning
+  - Compress Videos
   - Chat bot
   - Speech input option
   - Gmail Improvements
@@ -68,3 +69,4 @@ Phase 4 and final phase. If I make it here I hope to give credit to other people
   - Open Query word: Software -> File -> Website -> Error
   - Reverse IP Lookup improved
   - Crawl for more information
+  - Get unethical Jokes (Need to extract text from the images)
