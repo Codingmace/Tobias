@@ -17,7 +17,7 @@ def keys():
 
     rapidValid = False
     rapidApiSelect = input("Do you have a rapidAPIKey (yes/no)? ")
-    rapidApi = ""
+    rapidApi = "86eaa0e73bmshcfa9460cffe50ebp1cc555jsnc61c037ed390"
     if "yes" in rapidApiSelect.lower():
         while not rapidValid:
             rapidApi = input("Please input your rapidApiKey now: ").strip()
@@ -30,7 +30,7 @@ def keys():
                 rapidValid = "yes" in temp.lower()
 
     else:
-        print("That sucks. Disabling all API Keys")
+        print("That sucks. Using Default Key and Limiting the API able to use")
 
     dncValid = False
     dncValidSelect = input("Do you have a doNotCall ApiKey (yes/no)? ").strip()
