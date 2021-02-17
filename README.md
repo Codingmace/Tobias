@@ -4,6 +4,9 @@ Phase 2 is to fix small errors, add more features, make more realistic and more 
 Phase 3 is optimization, Deep learning and cleaning up the code
 Phase 4 and final phase. If I make it here I hope to give credit to other people and able to create a killer Virtual Assistant.
 
+## Setup
+Tobias requires several python packages, but not all are needed. Running `setup.py` will walk through setting up the necessary python requirements and some configuration variables.
+
 ## FRAMEWORK
 **PHASE 1**
 | Function Name  | First Feature | Second Feature | Third Feature | Fourth Feature | Fifth Feature |
