@@ -1,0 +1,51 @@
+
+### PHASE 2
+- Phone Calls
+  - [ ] Search to see if blocked (DNC DATABASE API) - Working on
+  
+- Queries
+  - [ ] Can be taught new commands
+  
+- Photo
+  - [ ] Grab recent top iFunny memes
+  - [ ] Download Random Facts
+  - [ ] Object Classification
+
+- Personal Software
+  - [ ] Use incremental Backup Software
+  - [ ] Compress TimeLapse recording
+  - [ ] Scan Videos for key components
+  - [ ] Remove duplicate files on computer
+  - [ ] Remove empty folders on computer
+ 
+ - Aspects
+  - Get Animal Breed
+  - Output passive crawl of a website
+  - Deep Learning
+  - Compress Videos
+  - Chat bot
+  - Speech input option
+  - Gmail Improvements
+  - D2Nit Camera enhancement (Requires a lot more computing power. Could be moved to phase 3)
+  - Vehicle history API
+  - VIN Decoder
+  - Enhance Photo
+  - Write Journal
+  - Track what have eaten
+  - Expression Recognition
+  - Hand gesture recognition
+  - Save notes from user
+  - Add multiple voices
+  - Revise Port scanner
+  - Add oxford dictionary
+  - Improve PAPI
+  - Gmail Access Other Labels
+  - Gmail Access the message and unsubscribe
+  - Recipies on what to cook
+  - Random recipe to cook
+  - Find most fitting RegEx Filter for data
+  - Fix images upload
+  - Open Query word: Software -> File -> Website -> Error
+  - Reverse IP Lookup improved
+  - Crawl for more information
+  - Get unethical Jokes (Need to extract text from the images)
