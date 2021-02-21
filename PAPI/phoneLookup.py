@@ -44,8 +44,8 @@ def npnr(phoneNumber):
 ###############
 # USPHONEBOOK #
 ###############
-def USPhonebook(phoneNumber):
-    dataLocation = "Downloaded/phoneLookup/" # Where it is going to be stored
+def USPhonebook(username, phoneNumber):
+    dataLocation = "./User/" + username + "/" # Where it is going to be stored
     os.makedirs(dataLocation)
     baseUrl = "https://www.usphonebook.com/"
     extendUrl = phone_format(phoneNumber, "-")

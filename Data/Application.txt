@@ -36,3 +36,4 @@ Regedit
 File Explorer
 Teams
 Github Desktop
+Windows App Folder

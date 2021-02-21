@@ -11,6 +11,7 @@ import os
 ###########################
 def gmailCleanup():
     from PAPI import gmailCleanv1
+    print("Make sure Json Credentials is in this folder")
     return cleanGmail()
 
 def imageCleanup():
@@ -65,13 +66,13 @@ def unique(query):
 # to get person and #
 # place of a number #
 #####################
-def phoneLookup(query):
+def phoneLookup(username, query):
     from PAPI.phoneLookup import npnr, USPhonebook
     cleanPhoneNumber = query.replace("[^0-9]", "")
     if len(cleanPhoneNumber) < 10:
         return "The number " + cleanPhoneNumber + " does not have enough numbers"
     site1 = npnr(cleanPhoneNumber)
-    site2 = USPhonebook(cleanPhoneNumber)
+    site2 = USPhonebook(username, cleanPhoneNumber)
     if site1 == site2:
         return "I am 100% sure the phone number is " + site1
     elif site1 == "IDK":
