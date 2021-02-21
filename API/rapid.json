@@ -1,0 +1,396 @@
+{
+  "apis": [
+    {
+      "name": "email-validator",
+      "x-rapidapi-host": "email-validator8.p.rapidapi.com",
+      "functions": [
+        {
+          "name": "validEmail",
+          "url": "https://email-validator8.p.rapidapi.com/api/v2.0/email",
+          "requests": "POST",
+          "variables": [
+            {
+              "name": "email",
+              "required": true
+            }
+          ],
+          "headers": [
+            { "content-type": "application/x-www-form-urlencoded" }
+
+          ],
+          "return": [ "email", "valid", "disposable", "mx_records", "exists" ]
+        }
+      ]
+    },
+    {
+      "name": "Google Search",
+      "x-rapidapi-host": "google-search3.p.rapidapi.com",
+      "functions": [
+        {
+          "name": "search",
+          "url": "https://google-search3.p.rapidapi.com/api/v1/search/q=term&num=number",
+          "request": "GET",
+          "variables": [
+            {
+              "name": "term",
+              "required": true
+            },
+            {
+              "name": "number",
+              "required": false
+            }
+          ],
+          "return": [ "answers", "results" ]
+        },
+        {
+          "name": "images",
+          "url": "https://google-search3.p.rapidapi.com/api/v1/images/q=term",
+          "request": "GET",
+          "variables": [
+            {
+              "name": "term",
+              "required": true
+            }
+          ],
+          "return": [ "", "" ]
+        }
+      ]
+    },
+    {
+      "name": "ip2location",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "", "" ]
+        }
+      ]
+    },
+    {
+      "name": "ipGeolocation",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "", "" ]
+        }
+      ]
+    },
+    {
+      "name": "ipWorldWide",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "", "" ]
+        }
+      ]
+    },
+    {
+      "name": "OCRLY",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Open Proxies",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "openProxy",
+          "url": "https://open-proxies.p.rapidapi.com/daily",
+          "variables": [ {} ],
+          "return": [ "proxy" ]
+        }
+      ]
+    },
+    {
+      "name": "Open Weather",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "available": false,
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Plate Recognition",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Pose Estimate",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Reverse Image Search",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Summarize API",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Test Text",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Text Analyzer",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Threat Detector",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Transcribe",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Trulia",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Urban Dictionary",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "URL Intel",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Verifone",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Weather.com",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    },
+    {
+      "name": "Youtube Download",
+      "rapidApi": true,
+      "functions": [
+        {
+          "name": "",
+          "url": "",
+          "variables": [
+            {
+              "name": "",
+              "required": ""
+            }
+          ],
+          "return": [ "email", "valid" ]
+        }
+      ]
+    }
+  ]
+}

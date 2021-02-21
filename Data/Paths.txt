@@ -36,3 +36,4 @@
 "C:\Windows\explorer.exe"
 "C:\Users\%USER%\AppData\Local\Microsoft\Teams\current\Teams.exe"
 "C:\Users\%USER%\AppData\Local\GitHubDesktop\GitHubDesktop.exe"
+"C:\Users\%USER%\AppData\Local\Microsoft\WindowsApps\"

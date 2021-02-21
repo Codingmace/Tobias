@@ -318,7 +318,7 @@ if __name__ == '__main__':
 
         elif "lookup phone number" in query:
             query = query.replace("lookup phone number","")
-            speak(phoneLookup(query))
+            speak(phoneLookup(name, query))
 
         elif "clean gmail account" in query:
             speak("Make sure you have the credentials already set up")
