@@ -12,14 +12,14 @@ Tobias requires several python packages, but not all are needed. Running `setup.
 | Function Name  | First Feature | Second Feature | Third Feature | Fourth Feature | Fifth Feature |
 | ------------- | ------------- | ------------------------ | ------------- | ------------- | ------------- |
 | Facial Recognition | Cat Faces  | Human Faces |
-| Phone Calls  | Reverse IP lookup  | Name of caller | Origin of caller |  See if caller is blocked | Validate Phone Number |
-| Networking   | Get Public IP | Ping Sweep | Port Scanner | Find Open Proxies |
+| Phone Calls  | Reverse IP lookup  | Name of caller | Origin of caller |  Validate Phone Number |
+| Networking   | Get Public IP | Ping Sweep | Find Open Proxies |
 | Web          | Search Google | Open Web URL | Crawl website | Download Youtube Videos | Gmail Unsubscribe |
 | Web Cont.    | Scan URL for Threats | Summarize URL content | 
-| Removed      | ~~Remove from internet~~ | ~~Android vulernability parts~~ |
+| Removed      | ~~Remove from internet~~ | ~~Android vulernability parts~~ | ~~See if caller is blocked~~ | ~~Top Memes~~ |
 | Basic Queries | Taught New Commands | Weather | Time and Screenshot | Shutdown and Sleep | Play Music |
 | Quieries Cont. | Launch Software | Activate DNS Adblocker | Current System Stats | Define a word | Basic Calculations |
 | Photos  | *Enhance* | *Compress* | Find Face | Image to Text |
-| Scrapping | Desktop Photo | Random Cat Facts | Top Memes |
-| Public Info | Access Traffic Cameras | 
+| Scrapping | Desktop Photo | Random Cat Facts | 
+| Public Info | Access Traffic Cameras |
 
