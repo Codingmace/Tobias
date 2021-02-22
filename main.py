@@ -245,11 +245,6 @@ if __name__ == '__main__':
                 else:
                     speak("I do not think that is an option")
 
-            elif 'video' in query or 'image' in query:
-                speak("This one doesn't work at all yet")
-#                print(estimatePose(query))
-
-
         elif 'transcribe' in query:
             if 'audio to text' in query:
                 query = query.replace("trascribe audio to text", "")
@@ -291,14 +286,7 @@ if __name__ == '__main__':
             elif "world wide" in query:
                 speak(ipLocWW(ipv4))
 
-        elif 'plate scan' in query:
-            query = query.replace("plate scan","")
-            speak("Printing out plate information")
-            print(plateRecognition(query))
-
-
 #       """ Personal API Helper """
-
         elif 'launch' in query:
             query = query.replace("launch", "").strip()
             print("Go to the other helper and launch the software")
@@ -312,9 +300,6 @@ if __name__ == '__main__':
             query = query.replace("access traffic cameras in", "").strip()
             speak(trafficCamera(query))
 
-        elif "clean text file lines" in query:
-            query = query.replace("clean text file lines", "")
-            speak(unique(query))
 
         elif "lookup phone number" in query:
             query = query.replace("lookup phone number","")
@@ -323,24 +308,6 @@ if __name__ == '__main__':
         elif "clean gmail account" in query:
             speak("Make sure you have the credentials already set up")
             speak(gmailCleanup())
-
-        elif "pihole" in query:
-            query = query.replace("pihole ", "")
-            print("Not done but have implemented the steps")
-            print("Look in my other PiHole repository if you would like to improve your already made pihole system")
-            print("Check that it even exists")
-            if "status" in query:
-                print("Print out the status")
-            elif "disable" in query:
-                print("Check if it is already disabled. If not disable")
-            elif "enable" in query:
-                print("Check if it is already enabled. If not enable")
-            elif "update" in query:
-                print("Updating the database. This is very hard and takes a while")
-            elif "install" in query:
-                print("install it based on github and install it. Also grab my  domains list")
-            elif "remove" in query:
-                print("just covering all my bases")
 
         else: # check if it is a command to run on terminal
             print("Check here if it is a command or not")

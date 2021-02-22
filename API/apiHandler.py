@@ -235,21 +235,6 @@ def verifyPhoneNumber(query):
         return "That phone is not valid"
 
 
-# Pose Estimate : Takes a photo or video and estimates the posture
-def estimatePose(query):
-    from API.poseEstimate import video, image
-    print("Need to read in this data and encode it through base64 I think")
-    if 'image' in query:
-        query = query.replace("image", "")
-        imageData = readData(query)
-        return image(imageData)
-    elif 'video' in query:
-        query = query.replace("video", "")
-        videoData = readData(query)
-        return video(videoData)
-    else:
-        return ""
-
 # Transcribe : Turns audio into text
 def transcribeAudio(query):
     from API.transcribe import transcribeUrl, getTask, serviceStatus, getTasks, transcribe
@@ -272,18 +257,6 @@ def transcribeAudio(query):
 
 def encode(term): # URL Encoding
     return term.replace(" ", "%20")
-
-# Trulia :
-def propertySearch(query):
-    from API.trulia import searching, propertyDetail
-    print("Have no fucking clue how I am going to get this information")
-
-
-# COST MONEY
-# Category Prediction : Prints out catagories the text matches
-def predictCategory(query):
-    from API.categoryPrediction import categoryPrediction
-    print("Could take this from the text")
 
 # Text Analyzer : Analyzes the contents of a URL
 def analyzeUrlText(query):
@@ -319,19 +292,6 @@ def analyzeText(query):
 def summarizeUrlText(query):
     from API.summarizeApi import summarize
     return summarize(query)
-
-# Plate Recognition :
-def plateRecognition(query):
-    from API.plateRecognition import recognizeByUrl , recognizeByImage
-    if "url" in query:
-        query = query.replace('url', "")
-        return recognizeByUrl(query)
-    elif "file" in query:
-        query = query.replace("file", "")
-        imageData = readData(query)
-        return recognizeByImage(imageData)
-    else:
-        return ""
 
 # OCRLY : URL Image to text
 def urlImage2Text(query): # Uses true url encoding

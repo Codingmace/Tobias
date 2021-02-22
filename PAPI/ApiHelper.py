@@ -1,5 +1,4 @@
 import os
-#from PAPI.quickstart import main
 
 
 ###########################
@@ -13,12 +12,6 @@ def gmailCleanup():
     from PAPI import gmailCleanv1
     print("Make sure Json Credentials is in this folder")
     return cleanGmail()
-
-def imageCleanup():
-    print("For compressing images")
-
-def incrementCleanup():
-    print("Turning zip into incremental Backups")
 
 
 #####################
@@ -40,24 +33,6 @@ def openSoftware(query):
     from PAPI.launchSoftware import launch
     softwareExist = launch(query)
     return softwareExist
-
-#####################
-#   uniqueLines.py  #
-# clean text file   #
-# duplicate lines   #
-# (And maybe sort)  #
-#####################
-def unique(query):
-    from PAPI.uniqueLines import lineSort, line
-    sorting = "sort" in query
-    query = query.replace("sort","").strip()
-    if not os.path.exists(query):
-        return "That file does not exist. Try again"
-    if sorting:
-        lineSort(query)
-    else:
-        line(query)
-    return "File has been sorted and named newFile.txt"
 
 
 #####################
